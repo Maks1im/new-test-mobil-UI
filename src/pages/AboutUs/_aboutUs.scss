@@ -1,0 +1,67 @@
+.about__us-main{
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+
+  .about_us_wrapper {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding-bottom: 5rem;
+
+    @media (min-width: 1024px) {
+     padding: 0;
+    }
+  }
+
+  .about_us_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    margin-top: 1rem;
+
+    .founders-cards{
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+      .card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 2rem;
+        height: 20rem;
+        max-width: 20rem;
+        width: 100%;
+        gap: 1rem;
+        border-radius: 1rem;
+        border: 2px solid blueviolet;
+        box-shadow: 0px 0px 54px 0px rgba(0, 0, 0, 0.2);
+
+        @media (min-width: 768px) {
+          max-width: 25rem;
+        }
+      }
+
+      .icons{
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+      }
+
+      @media (min-width: 1024px) {
+        flex-direction: row;
+        gap: 2rem;
+      }
+    }
+
+    .about_products{
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      padding: 1rem;
+    }
+  }
+}

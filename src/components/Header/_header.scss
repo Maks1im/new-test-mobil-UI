@@ -1,0 +1,146 @@
+.header{
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 0px 0px 35px 0px rgba(0, 0, 0, 0.2);
+  padding: 0 1.5rem;
+  backdrop-filter: blur(15px);
+  background: #201F1F;
+  gap: 1rem;
+  z-index: 1000;
+  border-radius: 0rem 0rem .8rem .8rem;
+
+  button{
+    background: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+
+  &-mobile{
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    .header-navigator{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+
+      .link__logo{
+        font-size: 1.65rem;
+        font-weight: bold;
+        font-family: sans-serif;
+      }
+    }
+    
+    @media (min-width: 1024px) {
+      display: none;
+    }
+
+
+    .form__search{
+      display: flex;
+      justify-content: center;
+      margin-top: .5rem;
+
+      .group {
+        display: flex;
+        align-items: center;
+
+        .search__icon {
+          position: absolute;
+          margin-left: .5rem;
+          color: #979797;
+        }
+
+        .grop__input {
+          background: #cfcfcf;
+          border: none;
+          outline: none;
+          padding: .4rem 2rem;
+          border-radius: 1rem;
+          max-width: 768px;
+          width: 20rem;
+          height: 2rem;
+          color: #3c3c3c;
+        }
+      }
+    }
+  }
+
+  &__desktop {
+    display: flex;
+    align-items: center;
+    padding: 0 3.5rem;
+    height: 4.5rem;
+    width: 100%;
+    gap: 5rem;
+    display: none;
+
+    .link__logo-desktop {
+      font-size: 2rem;
+      font-weight: bold;
+      font-family: sans-serif;
+    }
+
+    .form__search .group-desktop {
+      position: relative;
+      display: flex;
+      align-items: center;
+
+      .search__icon-desktop {
+        position: absolute;
+        left: 15px;
+        color: #979797;
+      }
+
+      .grop__input-desktop {
+        background: #201F1F;
+        border: 2px solid #a1a1a1;
+        outline: none;
+        padding-left: 2.5rem;
+        border-radius: 1rem;
+        width: 450px;
+        height: 2.5rem;
+        color: #ffffff;
+        transition: all .3s;
+
+        &:focus {
+          width: 500px;
+        }
+      }
+    }
+
+    .add-div {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      margin-left: auto;
+
+      .add{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        font-size: 1.2rem;
+        background: transparent;
+        border: none;
+        color: white;
+        cursor: pointer;
+        transition: .3s;
+
+        .active{
+          color: #f700ff;
+        }
+      }
+    }
+
+    @media (min-width: 1024px) {
+      display: flex;
+    }
+  }
+}

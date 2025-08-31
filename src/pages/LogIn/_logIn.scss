@@ -1,0 +1,28 @@
+@use "../../styles/mixins/mixins" as *;
+
+.Login, .SignUp {
+  @include main-style;
+
+  .inputsDiv {
+    @include inputsDivStyle;
+
+    div {
+      @include divStyle;
+    }
+  }
+
+  input {
+    @include inputStyle;
+  }
+
+  button {
+    @include buttonStyle;
+    margin-top: 1rem;
+  }
+
+  .Link__SignUp{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+  }
+}

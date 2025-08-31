@@ -1,0 +1,7 @@
+.content-wrapper{
+  display: flex;
+
+  @media (min-width: 1024px) {
+    flex: 1
+  }
+}

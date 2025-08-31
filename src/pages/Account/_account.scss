@@ -1,0 +1,16 @@
+@use "../../styles/mixins/mixins" as*;
+
+.main__account {
+  @include account-styles;
+
+  .subscribe-button{
+    @include buttonStyle;
+    width: 11rem;
+    font-size: .9rem;
+
+    @media (min-width: 1024px) {
+
+      height: 3rem;
+    }
+  }
+}

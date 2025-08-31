@@ -1,0 +1,54 @@
+.navbar{
+  position: sticky;
+  top: 4.5rem;
+  font-size: 21.5px;
+  height: calc(100vh - 6rem);
+  z-index: 99;
+  margin-top: 1rem;
+  display: none;
+
+  .menu-list-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+
+    .menu-item{
+      padding: .8rem;
+
+      .links{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        transition: .1s;
+
+        &:hover{
+          color: #f76cff;
+        }
+      }
+    }
+
+    .active{
+      color: #f76cff;
+    }
+
+    .about__us{
+      display: flex;
+      flex-direction: column;
+      gap: .6rem;
+
+      a{
+        color: #aaaaaa;
+      }
+
+      p{
+        color: #aaaaaa;
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+
+  @media (min-width: 1024px) {
+    display: flex;
+  }
+}

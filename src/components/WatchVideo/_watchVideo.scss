@@ -1,0 +1,19 @@
+@use "../../styles/mixins/mixins" as *;
+
+.video-container {
+  display: flex;
+  flex-direction: column;
+
+  h2{
+    padding-left: 1rem;
+
+    @media (min-width: 1024px) {
+      padding-left: 0;
+    }
+  }
+
+  .video-watch{
+    @include video;
+    width: 100%;
+  }
+}

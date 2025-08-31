@@ -1,0 +1,62 @@
+@use "../../styles/mixins/mixins" as*;
+
+.header__welcomePage{
+  display: flex;
+  align-items: center;
+  margin: 2rem auto;
+  height: 3.8rem;
+  font-size: 2rem;
+  font-family: sans-serif;
+  border-radius: 2rem;
+  width: 90%;
+  box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.2);
+
+  .logo{
+    margin: 0 auto;
+    font-weight: bold;
+  }
+
+  @media (min-width: 768px) {
+    height: 4.5rem;
+  }
+}
+
+.main__content__welcomePage{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: sans-serif;
+  gap: 2rem;
+
+  .buttons__div{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+
+    button{
+      @include buttonStyle;
+      width: inherit;
+
+      @media (min-width: 768px) {
+        padding: 0.8rem;
+        width: 12rem;
+      }
+    }
+
+    .button__login{
+      width: 8rem;
+    }
+  }
+}
+
+.footer__welcomePage{
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+
+  .link__to__tg{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+}

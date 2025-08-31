@@ -1,0 +1,15 @@
+@use "../../styles/mixins/mixins" as*;
+
+.other{
+  @include main-style-modal;
+  right: 0rem;
+  top: 6rem;
+
+  .navbar-nav__list{
+    @include menu-style
+  }
+
+  .active{
+    color: #f76cff;
+  }
+}

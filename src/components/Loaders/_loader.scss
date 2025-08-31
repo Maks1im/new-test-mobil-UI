@@ -1,0 +1,21 @@
+@use "../../styles/mixins/mixins" as *;
+
+@include keyframes-rotate4;
+@include keyframes-dash4;
+
+.loader {
+  width: 80px;
+  height: 80px;
+  transform-origin: center;
+  animation: rotate4 2s linear infinite;
+
+  circle {
+    fill: none;
+    stroke: hsl(214, 97%, 59%);
+    stroke-width: 2;
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+    stroke-linecap: round;
+    animation: dash4 1.5s ease-in-out infinite;
+  }
+}

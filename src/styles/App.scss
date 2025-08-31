@@ -1,0 +1,54 @@
+@use "../components/Header/_header.scss" as *;
+@use "../components/MenuMobile/_menuMobile.scss" as *;
+@use "../pages/Account/_account.scss" as *;
+@use "../pages/Add/_add.scss" as *;
+@use "../pages/Settings/_settings.scss" as *;
+@use "../modals/ModalRecommendations/_modalReacommendations" as *;
+@use "../modals/ModalMenuOther/_modalMenuOther" as *;
+@use "../pages/Recommendations/_recommendations.scss" as *;
+@use "../pages/AboutUs/_aboutUs.scss" as *;
+@use "../components/Video/_video.scss" as *;
+@use "../pages/Watch/_watch.scss" as *;
+@use "../components/Buttons/_SubButton.scss" as *;
+@use "../pages/NotFoundPage/_notFound.scss" as *;
+@use "../components/MenuDesktop/_menuDesktop.scss" as *;
+@use "../components/WatchVideo/_watchVideo.scss" as *;
+@use "../pages/LogIn/_logIn" as *;
+@use "../pages/SignUp/_signUp" as *;
+@use "../pages/WelcomePage/welcomePage.scss" as *;
+@use "../components/Loaders/loader" as *;
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background: #201F1F;
+  font-family: 'Nunito', sans-serif;
+  color: white;
+  width: 100%;
+  height: 100vh;
+
+  a{
+    text-decoration: none;
+    color: white;
+  }
+
+  li{
+    list-style: none;
+  }
+
+  @media (min-width: 1024px) {
+    .main-container{
+      display: flex;
+      flex-direction: row;
+      padding-left: 1.5rem;
+      max-width: 1920px;
+    }
+  }
+}

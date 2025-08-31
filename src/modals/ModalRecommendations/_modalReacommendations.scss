@@ -1,0 +1,15 @@
+@use "../../styles/mixins/mixins" as *;
+
+.sidebar__menu{
+  @include main-style-modal;
+  top: 6rem;
+  left: 0;
+
+  .menu__menu__list{
+    @include menu-style;
+
+    .active{
+      color: #ff6ff2;
+    }
+  }
+}
