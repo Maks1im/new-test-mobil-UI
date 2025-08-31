@@ -57,7 +57,7 @@ function AboutUs() {
                     </div>
                     <div className={"about_products"}>
                         <h1>О продукте</h1>
-                        <h2>Okey - это место где ты можешь стать свободным!</h2>
+                        <h2>ItsOkey - это место где ты можешь стать свободным!</h2>
                     </div>
                 </div>
             </div>
