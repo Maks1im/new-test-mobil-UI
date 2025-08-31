@@ -1,6 +1,6 @@
 import { lazy, Suspense } from "react";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import "./styles/App.css";
+import "./styles/App.scss";
 import Loader from "./components/Loaders/Loader.jsx";
 import Layout from "./components/layout/Layout.jsx";
 
